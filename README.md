@@ -6,6 +6,7 @@ API REST desenvolvida em Node.js para gerenciamento de pedidos.
 
 - Node.js
 - Express
+- Swagger
 - Git
 - GitHub
 
@@ -19,23 +20,15 @@ utils/
 
 ## Endpoints
 
-Criar pedido
+POST /order - Criar pedido
 
-POST /order
+GET /order/:id - Buscar pedido
 
-Buscar pedido
+PUT /order/:id - Atualizar pedido
 
-GET /order/:id
+DELETE /order/:id - Remover pedido
 
-Atualizar pedido
-
-PUT /order/:id
-
-Excluir pedido
-
-DELETE /order/:id
-
-## Como executar o projeto
+## Executar projeto
 
 Instalar dependências
 
@@ -48,3 +41,9 @@ node index.js
 Servidor roda em:
 
 http://localhost:3000
+
+## Documentação da API
+
+Após rodar o projeto acesse:
+
+http://localhost:3000/api-docs
